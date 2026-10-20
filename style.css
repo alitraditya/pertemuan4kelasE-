@@ -1,0 +1,41 @@
+body{
+            background-color: #313131;
+            margin: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    .flex-center{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+.kartu-profile{
+    background-color: #838383;
+    padding: 30px;
+    width: 300px;
+    text-align:center;
+    border: 2px solid #460000; 
+    border-radius: 50px 0;
+    box-shadow:  -11px 10px 6px -1px rgb(191 0 0);
+}
+.kartu-profile h2{
+    color: #580000
+}
+.kartu-profile p{
+    margin: 0;
+    color:#460000;
+    font-size: 20px;
+}
+.btn-detail{
+    color:aliceblue;
+    background-color: #460000;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.btn-detail:hover{
+    background-color:aliceblue;
+}
