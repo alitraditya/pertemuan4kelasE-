@@ -19,7 +19,21 @@
             border-radius: 6px;
 
         }
-        
+        .btn-close{
+            position: relative;
+            top: 8px;
+            right: 10px;
+            border: none;
+            background: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #ffffff;
+
+        }
+        .btn-close:hover{
+            color: #990000;
+        }
         </style>
 </head>
 <body>
@@ -29,18 +43,32 @@
     <div class="kartu-profile">
         <h2> Krizz GoodDog </h2>
         <p>Web Desain</p>
-        <button onclick="info()"class="btn-detail">Info Lengkap</button>
+        <button id="btndetail" onclick="info()"class="btn-detail">Info Lengkap</button>
 </div>
 
 </div>
 
-    <div class="kotak-info sembunyi">
+    <div class="kotak-info sembunyi" id="infobox">
+        <button onclick= "tutupdetail()" class="btn-close">&times;</button>
         <h1> Informasi Detail</h1> 
     </div>
     
 <script>
     function info(){
-        alert("Tombol Lengkap di ke clik");
+        //alert("Tombol Lengkap di ke clik");
+        let info = document.getElementById("infobox");
+        let btndetail = document.getElementById("btndetail");
+
+        info.style.display = "block";
+        btndetail.style.display = "none";
+    }
+    function tutupdetail(){
+        //alert("Tombol Lengkap di ke clik");
+        let info = document.getElementById("infobox");
+        let btndetail = document.getElementById("btndetail");
+
+        info.style.display = "block";
+        btndetail.style.display = "inline-block";
     }
 </script>
 </body>
